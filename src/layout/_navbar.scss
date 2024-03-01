@@ -1,0 +1,31 @@
+
+
+
+.container-nav {
+    background-color: $color1;
+    h1 {
+        margin-left: 10px;
+    }
+
+    li {
+        list-style: none;
+
+        a {
+            list-style: none;
+            text-decoration: none; 
+        }
+    }
+}
+
+
+
+.material-symbols-outlined {
+    font-variation-settings:
+      'FILL' 1,
+      'wght' 400,
+      'GRAD' 0,
+      'opsz' 24;
+      color: white; 
+  }
+  
+

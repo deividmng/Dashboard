@@ -1,4 +1,8 @@
-@import 'layout/normalize';
+@import 'layout/base/variables';
+@import 'layout/base/normalize';
+
+
+
 @import 'layout/grid';
 @import 'layout/header';
 @import 'layout/navbar';

@@ -1,4 +1,4 @@
-.container {
+.container-g {
     display: grid;
     grid-template-columns: 0.7fr 2fr 1fr; 
     min-width: 100vh;
@@ -16,7 +16,6 @@ header {
 }
 
 nav {
-    background-color: rgb(118, 40, 94);
     grid-area: nav;
     grid-column: 1 / 2;
     grid-row: 1 / -1;
