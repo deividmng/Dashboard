@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400,700,900");
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -296,7 +297,7 @@ template {
   display: none;
 }
 
-.container {
+.container-g {
   display: grid;
   grid-template-columns: 0.7fr 2fr 1fr;
   min-width: 100vh;
@@ -310,7 +311,6 @@ header {
 }
 
 nav {
-  background-color: rgb(118, 40, 94);
   grid-area: nav;
   grid-column: 1/2;
   grid-row: 1/-1;
@@ -326,4 +326,99 @@ aside {
   background: #999;
   grid-area: aside;
   grid-column: 3/-1; /* Coloca 'aside' a la derecha */
+}
+
+/* Styling the header */
+.share-header {
+  display: grid;
+  grid-template-columns: 30px 650px auto 50px auto; /* Each one deciden the site  */
+  align-items: center;
+  margin: 3px 20px 0; /* shorthand for top, right, bottom, left */
+}
+
+.material-symbols-outlined.icon-search {
+  max-width: 20px;
+  grid-column: 1;
+}
+
+.search-input {
+  grid-column: 2;
+  border-radius: 10px;
+}
+
+/* Styles for the notifications icon need to be chance cause it was 
+breaking the onther ones on the navbar */
+.material-symbols-outlined.icon-notifications {
+  display: flex;
+  justify-content: flex-end;
+  grid-column: 3;
+  align-items: center;
+}
+
+/* the img */
+.user-avatar {
+  grid-column: 4;
+  display: flex;
+  justify-content: flex-end;
+  margin-left: 20px;
+}
+
+.user-name {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; /* Aligns the content to the right */
+}
+
+.share-header-down {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #9bc5e1;
+  /* Styling for the buttons-header section in the left-share */
+}
+.share-header-down .left-share {
+  display: flex;
+  align-items: center;
+}
+.share-header-down .left-share .text-share {
+  flex-grow: 1;
+  margin-left: 10px;
+}
+.share-header-down .left-share .text-share p {
+  margin-bottom: 0rem !important;
+}
+.share-header-down .left-share .text-share span {
+  font-weight: 900;
+}
+.share-header-down .buttons-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* Additional styles for the buttons inside buttons-header */
+}
+.share-header-down .buttons-header button {
+  padding: 5px 25px;
+  border-radius: 20px;
+  background-color: #81acd2;
+  border: none;
+  color: white;
+}
+
+.container-nav {
+  background-color: #6893c3;
+}
+.container-nav h1 {
+  margin-left: 10px;
+}
+.container-nav li {
+  list-style: none;
+}
+.container-nav li a {
+  list-style: none;
+  text-decoration: none;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 24;
+  color: white;
 }/*# sourceMappingURL=app.css.map */

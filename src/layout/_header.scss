@@ -1,0 +1,82 @@
+/* Styling the header */
+.share-header {
+  display: grid;
+  grid-template-columns: 30px 650px auto 50px auto; /* Each one deciden the site  */
+  align-items: center;
+  margin: 3px 20px 0; /* shorthand for top, right, bottom, left */
+}
+
+.material-symbols-outlined.icon-search {
+  max-width: 20px;
+  grid-column: 1;
+}
+
+.search-input {
+  grid-column: 2;
+  border-radius: 10px;
+}
+
+/* Styles for the notifications icon need to be chance cause it was 
+breaking the onther ones on the navbar */
+.material-symbols-outlined.icon-notifications {
+  display: flex;
+  justify-content: flex-end;
+  grid-column: 3;
+  align-items: center;
+}
+
+/* the img */
+.user-avatar {
+  grid-column: 4;
+  display: flex;
+  justify-content: flex-end;
+  margin-left: 20px;
+}
+
+.user-name {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; /* Aligns the content to the right */
+}
+
+/// This es the secod part
+.share-header-down {
+  display: grid;
+  grid-template-columns: 2fr 1fr; // Two columns, one for each section
+padding-bottom: 10px;
+  border-bottom: 1px solid $color3;
+
+  .left-share {
+    display: flex;
+    align-items: center;
+
+    // Styles for the text-share section in the left-share
+    .text-share {
+      flex-grow: 1; // to allow the get all the space posible
+      margin-left: 10px;
+
+      p {
+        margin-bottom: 0rem !important;
+      }
+      span {
+        font-weight: 900;
+      }
+    }
+  }
+
+  /* Styling for the buttons-header section in the left-share */
+  .buttons-header {
+    display: flex;
+    align-items: center; // Center items vertically
+    justify-content: space-between; // Apply space-between to distribute space
+
+    /* Additional styles for the buttons inside buttons-header */
+    button {
+      padding: 5px 25px; // Adds padding to buttons for better appearance
+      border-radius: 20px;
+      background-color: $color2;
+      border: none;
+      color: white;
+    }
+  }
+}
