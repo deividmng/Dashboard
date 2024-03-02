@@ -1,0 +1,62 @@
+.container-section {
+    display: grid;
+    grid-template-columns: 2fr 2fr ;
+    grid-template-rows: auto auto ; /* Tres filas, la primera ocupada por h1, las otras por las cards */
+    gap: 10px; /* Ajusta el espacio entre las filas y columnas según tus preferencias */
+
+
+    grid-row-gap: 10px; /* Espacio vertical entre filas */
+    grid-column-gap: 10px; /* Espacio horizontal entre columnas */
+    padding: 10px; /* Padding alrededor de toda la cuadrícula */
+
+    h1 {
+        grid-area: 1 / 1 / 2 / -1; /* Ocupa la primera fila y todas las columnas */
+        background-color: red;
+        border: none; /* Elimina cualquier borde */
+        padding: 0; /* Elimina cualquier relleno */
+        margin: 0; 
+    }
+
+
+}
+
+
+.card {
+    display: grid;
+    grid-template-columns: 10px auto  ;
+    grid-template-rows: auto auto  ;
+    border-radius: 10px;
+    grid-template-areas: 
+        "colum texto texto"
+        "colum parafo icons";
+}
+
+.color-block {
+    background-color: red;
+    grid-area: colum / span 2; /* Abarca dos filas */
+    margin-left: -1px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius:10px ;
+  
+}
+
+h2 {
+    margin-left: 10px;
+    grid-area: texto;
+}
+
+p {
+    margin-left: 10px;
+    grid-area: parafo;
+    line-height: 19px;
+    
+    
+}
+
+.icons {
+    grid-area: icons;
+    display: flex;
+    justify-content: flex-end; 
+    margin-bottom: 10px;
+}
+
