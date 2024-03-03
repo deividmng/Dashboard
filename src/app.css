@@ -302,7 +302,7 @@ template {
   display: grid;
   grid-template-columns: 0.5fr 2fr 1fr;
   min-width: 100vh;
-  grid-template-areas: "header header header" "nav nav nav" "section section aside"; /* Cambiado a tres columnas y ajustado la posición de 'aside' */
+  grid-template-areas: "nav header header" "nav section aside"; /* Cambiado para colocar 'section' al lado de 'nav' */
 }
 
 header {
@@ -313,21 +313,17 @@ header {
 
 nav {
   grid-area: nav;
-  grid-column: 1/2;
-  grid-row: 1/-1;
 }
 
 section {
   background: rgb(165, 82, 82);
   grid-area: section;
-  grid-column: 2/3;
   min-height: 100vh;
 }
 
 aside {
   background: #999;
   grid-area: aside;
-  grid-row: 2/-2; /* Coloca 'aside' a la derecha de 'section' */
 }
 
 .share-header {
