@@ -300,9 +300,9 @@ template {
 
 .container-g {
   display: grid;
-  grid-template-columns: 0.7fr 2fr 1fr;
+  grid-template-columns: 0.5fr 2fr 1fr;
   min-width: 100vh;
-  grid-template-areas: "header header header" "nav nav nav" "section aside aside"; /* rmb here it wherer u can change the position */
+  grid-template-areas: "header header header" "nav nav nav" "section section aside"; /* Cambiado a tres columnas y ajustado la posición de 'aside' */
 }
 
 header {
@@ -321,13 +321,14 @@ nav {
 section {
   background: rgb(165, 82, 82);
   grid-area: section;
-  grid-column: 2/3; /* Centra 'section' */
+  grid-column: 2/3;
+  min-height: 100vh;
 }
 
 aside {
   background: #999;
   grid-area: aside;
-  grid-column: 3/-1; /* Coloca 'aside' a la derecha */
+  grid-row: 2/-2; /* Coloca 'aside' a la derecha de 'section' */
 }
 
 .share-header {
@@ -434,6 +435,12 @@ aside {
   color: white;
 }
 
+.grid-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr; /* Dos columnas, una para la sección y otra para el aside */
+  gap: 20px; /* Espacio entre las columnas */
+}
+
 .container-section {
   display: grid;
   grid-template-columns: 2fr 2fr;
@@ -455,6 +462,7 @@ aside {
   grid-template-columns: 10px auto;
   grid-template-rows: auto auto;
   border-radius: 10px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
   grid-template-areas: "colum texto texto" "colum parafo icons";
 }
 
@@ -482,4 +490,61 @@ p {
   display: flex;
   justify-content: flex-end;
   margin-bottom: 10px;
+}
+
+#aside2 {
+  grid-template-rows: 1fr 1fr;
+  gap: 1rem;
+}
+#aside2 h2 {
+  text-align: left;
+  margin-top: 10px;
+}
+#aside2 .card-aside2:nth-child(-n+2) {
+  border-bottom: 1px solid red;
+  margin-bottom: 10px;
+}
+#aside2 .container-card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 10px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.text-aside2 h3 {
+  font-size: 20px;
+  font-weight: 900;
+}
+.text-aside2 p {
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.card-treding {
+  background-color: red;
+  border-radius: 15px;
+  margin-left: 12px;
+  margin-right: 12px;
+}
+
+.trending img {
+  max-width: 50px;
+  margin-top: 10px;
+  margin-left: 10px;
+  border-radius: 50%;
+}
+
+.trendin1 {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+.trendin1 .user-a {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+.trendin1 .user-a span:nth-child(2) {
+  opacity: 0.7;
 }/*# sourceMappingURL=app.css.map */

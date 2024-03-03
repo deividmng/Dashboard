@@ -1,19 +1,22 @@
 .container-g {
     display: grid;
-    grid-template-columns: 0.7fr 2fr 1fr; 
+    grid-template-columns: 0.5fr 2fr 1fr; 
     min-width: 100vh;
     grid-template-areas: 
         "header header header"
         "nav nav nav"
-        "section aside aside"; /* rmb here it wherer u can change the position */
+        "section section aside"; /* Cambiado a tres columnas y ajustado la posición de 'aside' */
 }
 
 header {
     background: aqua;
     grid-area: header;
     grid-column: 2 / -1;
+
+
     padding: 10px;
     
+
 }
 
 nav {
@@ -25,11 +28,12 @@ nav {
 section {
     background: rgb(165, 82, 82);
     grid-area: section;
-    grid-column: 2 / 3; /* Centra 'section' */
+    grid-column: 2 / 3; 
+    min-height: 100vh;
 }
 
 aside {
     background: #999;
     grid-area: aside;
-    grid-column: 3 / -1; /* Coloca 'aside' a la derecha */
+    grid-row: 2 / -2; /* Coloca 'aside' a la derecha de 'section' */
 }
