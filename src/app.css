@@ -309,6 +309,7 @@ header {
   background: aqua;
   grid-area: header;
   grid-column: 2/-1;
+  padding: 10px;
 }
 
 nav {
@@ -330,8 +331,6 @@ aside {
   display: grid;
   grid-template-columns: 0.5fr 1.5fr 0.3fr 0.5fr 1fr;
   grid-template-rows: 1fr; /* rmb try use just one a 1fr */
-  margin-left: 29px;
-  margin-top: 20px;
   align-items: center;
   grid-template-areas: "lupa input notification avatar user";
 }
@@ -441,17 +440,16 @@ aside {
 .container-section {
   display: grid;
   grid-template-columns: 2fr 2fr;
-  grid-template-rows: auto auto; /* Tres filas, la primera ocupada por h1, las otras por las cards */
-  gap: 10px; /* Ajusta el espacio entre las filas y columnas según tus preferencias */
-  grid-row-gap: 10px; /* Espacio vertical entre filas */
-  grid-column-gap: 10px; /* Espacio horizontal entre columnas */
-  padding: 10px; /* Padding alrededor de toda la cuadrícula */
+  grid-template-rows: auto auto;
+  gap: 10px;
+  grid-row-gap: 10px;
+  grid-column-gap: 10px;
+  padding: 10px;
 }
 .container-section h1 {
-  grid-area: 1/1/2/-1; /* Ocupa la primera fila y todas las columnas */
-  background-color: red;
-  border: none; /* Elimina cualquier borde */
-  padding: 0; /* Elimina cualquier relleno */
+  grid-area: 1/1/2/-1;
+  border: none;
+  padding: 0;
   margin: 0;
 }
 
@@ -466,7 +464,7 @@ aside {
 
 .color-block {
   background-color: red;
-  grid-area: colum/span 2; /* Abarca dos filas */
+  grid-area: colum/span 2;
   margin-left: -1px;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
