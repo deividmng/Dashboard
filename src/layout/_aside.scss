@@ -1,0 +1,84 @@
+#aside2 {
+    grid-template-rows: 1fr 1fr;
+    gap: 1rem;
+
+
+
+    h2 {
+        text-align:left;
+        margin-top: 10px;
+    }
+
+ 
+    .card-aside2:nth-child(-n+2) {
+        border-bottom: 1px solid red;
+        margin-bottom: 10px;
+      }
+      
+
+    .container-card {
+        background-color: white;
+        padding: 20px;
+        border-radius: 10px;
+        margin: 10px;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+       
+    }
+
+}
+
+
+.text-aside2 {
+   h3 {
+    font-size: 20px;
+    font-weight: 900;
+   }
+
+   p {
+    margin: 0;
+    margin-bottom: 20px;
+   }
+}
+
+
+
+/// this is the card down 
+
+.card-treding {
+    background-color: red;
+    border-radius: 15px;
+    margin-left: 12px;
+    margin-right: 12px;
+}
+
+
+
+.trending {
+    img {
+        max-width: 50px;
+       margin-top: 10px;
+        margin-left: 10px;
+        border-radius: 50%;
+    }   
+}
+
+.trendin1 {
+    display: flex;
+    align-items: center; 
+    margin-top: 10px;
+
+    .user-a {
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    .user-a {
+        span:nth-child(2) {
+          opacity: 0.7;
+        }
+      }
+}
+
+
+  
