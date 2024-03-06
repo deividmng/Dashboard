@@ -9,13 +9,11 @@
     grid-template-columns: 2fr 2fr ;
     grid-template-rows: auto auto ; /* Tres filas, la primera ocupada por h1, las otras por las cards */
     gap: 10px; /* Ajusta el espacio entre las filas y columnas según tus preferencias */
-    grid-row-gap: 10px; /* Espacio vertical entre filas */
-    grid-column-gap: 10px; /* Espacio horizontal entre columnas */
+    grid-column-gap: 20px; /* Espacio horizontal entre columnas */
     padding: 10px; /* Padding alrededor de toda la cuadrícula */
 
     h1 {
         grid-area: 1 / 1 / 2 / -1; /* Ocupa la primera fila y todas las columnas */
-        background-color: red;
         border: none; /* Elimina cualquier borde */
         padding: 0; /* Elimina cualquier relleno */
         margin: 0; 
@@ -31,6 +29,7 @@
     grid-template-rows: auto auto  ;
     border-radius: 10px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    margin-bottom: 10px;
     grid-template-areas: 
     
         "colum texto texto"
