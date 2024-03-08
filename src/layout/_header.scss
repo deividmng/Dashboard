@@ -1,6 +1,6 @@
 .share-header {
   display: grid;
-  grid-template-columns: 0.5fr 1.5fr 0.3fr 0.5fr 1fr;
+  grid-template-columns: 0.2fr 1.5fr 0.3fr 0.5fr 1fr;
   grid-template-rows: 1fr; /* rmb try use just one a 1fr */
   align-items: center;
   grid-template-areas:
@@ -11,8 +11,8 @@
   grid-area: lupa;
   max-width: 20px;
   display: flex;
-  justify-content: flex-end; /* Alinea el contenido a la derecha */
-  background-color: red;
+  margin-left: 10px;
+  
 }
 
 .search-input {
@@ -27,8 +27,9 @@
   grid-area: notification;
   grid-column: 3;
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-start;
   align-items: center;
+  margin-left: 5px;
 }
 
 /* the img */
@@ -37,7 +38,14 @@
   grid-column: 4; /* Modificado */
   display: flex;
   align-items: center; /* Añadido para centrar verticalmente */
-  margin-left: 30px;
+  margin-left: auto;
+}
+.user-avatar-left {
+  grid-area: avatar;
+  grid-column: 4; /* Modificado */
+  display: flex;
+  align-items: center; /* Añadido para centrar verticalmente */
+
 }
 
 .user-name {
@@ -47,6 +55,8 @@
   display: flex;
   align-items: center;
   justify-content: flex-start; /* Alinea el contenido a la izquierda */
+  font-size: 40px;
+  
 }
 
 
@@ -56,8 +66,7 @@
 .share-header-down {
   display: grid;
   grid-template-columns: 2fr 1fr; // Two columns, one for each section
-padding-bottom: 10px;
-  border-bottom: 1px solid $color3;
+
 
   .left-share {
     display: flex;
@@ -70,6 +79,7 @@ padding-bottom: 10px;
 
       p {
         margin-bottom: 0rem !important;
+        margin-left: 0px;
       }
       span {
         font-weight: 900;
@@ -88,15 +98,22 @@ padding-bottom: 10px;
   .buttons-header {
     display: flex;
     align-items: center; // Center items vertically
-    justify-content: space-between; // Apply space-between to distribute space
+    justify-content:center; // Apply space-between to distribute space
+   
 
     /* Additional styles for the buttons inside buttons-header */
     button {
-      padding: 5px 25px; // Adds padding to buttons for better appearance
+      padding: 5px 25px;
       border-radius: 20px;
       background-color: $color2;
       border: none;
       color: white;
+      margin-right: 10px;
+    
+      &:last-child {
+        margin-right: 0; // Establece el margen del último botón a cero
+      }
     }
+    
   }
 }

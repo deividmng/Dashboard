@@ -3,12 +3,24 @@
 
 .container-nav {
     background-color: $color1;
-    h1 {
-        margin-left: 10px;
+     
+    picture {
+        img {
+            margin: 6px 9px ;
+           height: 30px;
+        }
+      
+    }
+
+
+    ul {
+        
+        padding-left: 10px;
     }
 
     li {
         list-style: none;
+        margin-bottom: 10px;
 
         a {
             list-style: none;

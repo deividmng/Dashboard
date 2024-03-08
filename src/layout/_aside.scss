@@ -11,7 +11,7 @@
 
  
     .card-aside2:nth-child(-n+2) {
-        border-bottom: 1px solid red;
+        border-bottom: 1px solid $color4;
         margin-bottom: 10px;
       }
       
@@ -42,10 +42,35 @@
 
 
 
+// buton site 
+
+.card-aside2 {
+    button {
+        background-color: $color3;
+        color: white; 
+        padding: 8px 15px; 
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        margin-left: auto; 
+        margin-right: 10px;
+        margin-bottom: 3px;
+        transition: background-color 0.3s ease; 
+
+        &:hover {
+            background-color: darken($color3, 10%); 
+        }
+    }
+}
+
+
+
 /// this is the card down 
 
 .card-treding {
-    background-color: red;
+    background-color: white;
     border-radius: 15px;
     margin-left: 12px;
     margin-right: 12px;
