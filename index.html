@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -28,7 +27,11 @@
       <header>
         <div class="share-header">
           <span class="material-symbols-outlined icon-search"> search </span>
-          <input class="search-input" type="search" placeholder="Buscar..." />
+          <input
+            class="search-input"
+            type="search"
+            placeholder="Search by products..."
+          />
           <span class="material-symbols-outlined icon-notifications">
             notifications
           </span>
@@ -40,9 +43,6 @@
             style="width: 50px"
           />
           <p class="user-name">David Exposito</p>
-
-
-
         </div>
 
         <div class="share-header-down">
@@ -50,7 +50,7 @@
             <img
               src="./assets/deivid.jpg"
               alt=""
-              class="user-avatar img-thumbnail rounded-circle"
+              class="user-avatar-left img-thumbnail rounded-circle"
               style="width: 60px"
             />
             <div class="text-share">
@@ -59,7 +59,7 @@
             </div>
           </div>
           <div class="buttons-header">
-            <button>new</button>
+            <button>New</button>
             <button>Upload</button>
             <button>Share</button>
           </div>
@@ -67,7 +67,9 @@
       </header>
 
       <nav class="container-nav">
-        <h1>Here the icon</h1>
+        <picture>
+          <img src="./assets/img/caruchy-logo.png" alt="" />
+        </picture>
         <ul>
           <li>
             <span class="material-symbols-outlined"> home </span>
@@ -86,7 +88,9 @@
             <a href="#">Tasks</a>
           </li>
           <li>
-            <span class="material-symbols-outlined"> task </span>
+            <span class="material-symbols-outlined" style="margin-bottom: 50px">
+              task
+            </span>
             <a href="#">Comminiti</a>
           </li>
         </ul>
@@ -108,11 +112,19 @@
       </nav>
       <section class="section-grid">
         <div class="container-section">
-          <h1>Your Project</h1>
+          <h1>Our Gourmet Products</h1>
+
+          <!--end of the card-->
           <div class="card">
-            <div class="color-block"></div>
+            <div class="color-block" style="background-color: #d35400"></div>
             <div>
-              <h2>tex</h2>
+              <h2>Meat & Poultry</h2>
+              <div class="image-container">
+                <img
+                  src="./assets/img/meat-and-poultry.webp"
+                  alt="Descripción de la imagen"
+                />
+              </div>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing eit.
                 Consequatur, quis!
@@ -141,10 +153,17 @@
             <!--end of the div icons -->
           </div>
           <!--end of the card-->
+
           <div class="card">
-            <div class="color-block"></div>
+            <div class="color-block" style="background-color: #a04000"></div>
             <div>
-              <h2>tex</h2>
+              <h2>Coffe</h2>
+              <div class="image-container">
+                <img
+                  src="./assets/img/coffee.webp"
+                  alt="Descripción de la imagen"
+                />
+              </div>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing eit.
                 Consequatur, quis!
@@ -173,10 +192,57 @@
             <!--end of the div icons -->
           </div>
           <!--end of the card-->
+
           <div class="card">
-            <div class="color-block"></div>
+            <div class="color-block" style="background-color: #a45f23"></div>
             <div>
-              <h2>tex</h2>
+              <h2>Vinegars</h2>
+              <div class="image-container">
+                <img
+                  src="./assets/img/picual.png"
+                  style="object-fit: contain"
+                  alt="Descripción de la imagen"
+                />
+              </div>
+              <p>
+                vinavgre ipsum dolor sit amet consectetur adipisicing eit.
+                Consequatur, quis!
+              </p>
+            </div>
+            <div class="icons">
+              <span
+                style="color: black; margin-right: 10px"
+                class="material-symbols-outlined"
+              >
+                star
+              </span>
+              <span
+                style="color: black; margin-right: 10px"
+                class="material-symbols-outlined"
+              >
+                visibility
+              </span>
+              <span
+                style="color: black; margin-right: 10px"
+                class="material-symbols-outlined"
+              >
+                jump_to_element
+              </span>
+            </div>
+            <!--end of the div icons -->
+          </div>
+          <!--end of the card-->
+
+          <div class="card">
+            <div class="color-block" style="background-color: #f39c12"></div>
+            <div>
+              <h2>Organic Honey</h2>
+              <div class="image-container">
+                <img
+                  src="./assets/img/organic-honey.webp"
+                  alt="Descripción de la imagen"
+                />
+              </div>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing eit.
                 Consequatur, quis!
@@ -204,11 +270,16 @@
             </div>
             <!--end of the div icons -->
           </div>
-          <!--end of the card-->
           <div class="card">
-            <div class="color-block"></div>
+            <div class="color-block" style="background-color: #f39c12"></div>
             <div>
-              <h2>tex</h2>
+              <h2>Organic Honey</h2>
+              <div class="image-container">
+                <img
+                  src="./assets/img/organic-honey.webp"
+                  alt="Descripción de la imagen"
+                />
+              </div>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing eit.
                 Consequatur, quis!
@@ -236,43 +307,16 @@
             </div>
             <!--end of the div icons -->
           </div>
-          <!--end of the card-->
           <div class="card">
-            <div class="color-block"></div>
+            <div class="color-block" style="background-color: #f39c12"></div>
             <div>
-              <h2>tex</h2>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing eit.
-                Consequatur, quis!
-              </p>
-            </div>
-            <div class="icons">
-              <span
-                style="color: black; margin-right: 10px"
-                class="material-symbols-outlined"
-              >
-                star
-              </span>
-              <span
-                style="color: black; margin-right: 10px"
-                class="material-symbols-outlined"
-              >
-                visibility
-              </span>
-              <span
-                style="color: black; margin-right: 10px"
-                class="material-symbols-outlined"
-              >
-                jump_to_element
-              </span>
-            </div>
-            <!--end of the div icons -->
-          </div>
-          <!--end of the card-->
-          <div class="card">
-            <div class="color-block"></div>
-            <div>
-              <h2>tex</h2>
+              <h2>Organic Honey</h2>
+              <div class="image-container">
+                <img
+                  src="./assets/img/organic-honey.webp"
+                  alt="Descripción de la imagen"
+                />
+              </div>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing eit.
                 Consequatur, quis!
@@ -302,6 +346,8 @@
           </div>
           <!--end of the card-->
         </div>
+
+        <!--end of the cards-->
       </section>
 
       <aside id="aside2">
@@ -309,33 +355,40 @@
         <div class="container-card">
           <div class="card-aside2">
             <div class="text-aside2">
-              <h3>Site Maintenace</h3>
+              <h3>🎉 Special Offers</h3>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Temporibus laudantium veritatis asperiores.
+                To celebrate this launch, we are offering incredible discounts
+                on some of our most popular dishes. It's your chance to try
+                something delicious at a special price!
               </p>
+
+              <button>Read more</button>
             </div>
             <!--end of the text-->
           </div>
           <!--end of the card-asisde2-->
           <div class="card-aside2">
             <div class="text-aside2">
-              <h3>Community Share Day</h3>
+              <h3>📅 Launch Date</h3>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Temporibus laudantium veritatis asperiores.
+                These amazing changes to our menu will be available starting
+                [Launch Date]. Mark your calendar and join us for a unique
+                culinary experience.
               </p>
+              <button>Book a Table</button>
             </div>
             <!--end of the text-->
           </div>
           <!--end of the card-asisde2-->
           <div class="card-aside2">
             <div class="text-aside2">
-              <h3>Updated Privacy Policy</h3>
+              <h3>📞 Place Your Order</h3>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Temporibus laudantium veritatis asperiores.
+                Ready to enjoy these delights in the comfort of your home? Call
+                now at 07344422333 or place your order online through our
+                website [Website].
               </p>
+              <button>Request a Call</button>
             </div>
             <!--end of the text-->
           </div>

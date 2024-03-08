@@ -300,16 +300,17 @@ template {
 
 .container-g {
   display: grid;
-  grid-template-columns: 0.5fr 2fr 1fr;
+  grid-template-columns: 0.3fr 2fr 0.8fr;
   min-width: 100vh;
-  grid-template-areas: "nav header header" "nav section aside"; /* Cambiado para colocar 'section' al lado de 'nav' */
+  grid-template-areas: "nav header header" "nav section aside"; /* change in case you need  'nav' */
 }
 
 header {
-  background: aqua;
+  background: #9bc5e1;
   grid-area: header;
   grid-column: 2/-1;
   padding: 10px;
+  border-bottom: 2px solid #cdf6ff;
 }
 
 nav {
@@ -317,14 +318,15 @@ nav {
 }
 
 section {
-  background: rgb(165, 82, 82);
+  background: #cdf6ff;
   grid-area: section;
   min-height: 100vh;
 }
 
 aside {
-  background: #999;
+  background: #cdf6ff;
   grid-area: aside;
+  min-height: 100vh;
 }
 
 .share-header {
@@ -339,7 +341,7 @@ aside {
   grid-area: lupa;
   max-width: 20px;
   display: flex;
-  justify-content: flex-end; /* Alinea el contenido a la derecha */
+  margin-left: 10px;
 }
 
 .search-input {
@@ -354,8 +356,9 @@ aside {
   grid-area: notification;
   grid-column: 3;
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-start;
   align-items: center;
+  margin-left: 5px;
 }
 
 /* the img */
@@ -364,7 +367,14 @@ aside {
   grid-column: 4; /* Modificado */
   display: flex;
   align-items: center; /* Añadido para centrar verticalmente */
-  margin-left: 30px;
+  margin-left: auto;
+}
+
+.user-avatar-left {
+  grid-area: avatar;
+  grid-column: 4; /* Modificado */
+  display: flex;
+  align-items: center; /* Añadido para centrar verticalmente */
 }
 
 .user-name {
@@ -374,13 +384,12 @@ aside {
   display: flex;
   align-items: center;
   justify-content: flex-start; /* Alinea el contenido a la izquierda */
+  font-size: 40px;
 }
 
 .share-header-down {
   display: grid;
   grid-template-columns: 2fr 1fr;
-  padding-bottom: 10px;
-  border-bottom: 1px solid #9bc5e1;
   /* Styling for the buttons-header section in the left-share */
 }
 .share-header-down .left-share {
@@ -401,7 +410,7 @@ aside {
 .share-header-down .buttons-header {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   /* Additional styles for the buttons inside buttons-header */
 }
 .share-header-down .buttons-header button {
@@ -410,16 +419,25 @@ aside {
   background-color: #81acd2;
   border: none;
   color: white;
+  margin-right: 10px;
+}
+.share-header-down .buttons-header button:last-child {
+  margin-right: 0;
 }
 
 .container-nav {
   background-color: #6893c3;
 }
-.container-nav h1 {
-  margin-left: 10px;
+.container-nav picture img {
+  margin: 6px 9px;
+  height: 30px;
+}
+.container-nav ul {
+  padding-left: 10px;
 }
 .container-nav li {
   list-style: none;
+  margin-bottom: 10px;
 }
 .container-nav li a {
   list-style: none;
@@ -453,8 +471,8 @@ aside {
 .container-section h1 {
   grid-area: 1/1/2/-1;
   border: none;
-  padding: 0;
-  margin: 0;
+  text-align: center;
+  margin: auto;
 }
 
 .card {
@@ -468,7 +486,6 @@ aside {
 }
 
 .color-block {
-  background-color: red;
   grid-area: colum/span 2;
   margin-left: -1px;
   border-top-left-radius: 10px;
@@ -491,6 +508,22 @@ p {
   display: flex;
   justify-content: flex-end;
   margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.image-container {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 #aside2 {
@@ -502,7 +535,7 @@ p {
   margin-top: 10px;
 }
 #aside2 .card-aside2:nth-child(-n+2) {
-  border-bottom: 1px solid red;
+  border-bottom: 1px solid #b4ddf0;
   margin-bottom: 10px;
 }
 #aside2 .container-card {
@@ -522,8 +555,26 @@ p {
   margin-bottom: 20px;
 }
 
+.card-aside2 button {
+  background-color: #9bc5e1;
+  color: white;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  margin-right: 10px;
+  margin-bottom: 3px;
+  transition: background-color 0.3s ease;
+}
+.card-aside2 button:hover {
+  background-color: #74aed5;
+}
+
 .card-treding {
-  background-color: red;
+  background-color: white;
   border-radius: 15px;
   margin-left: 12px;
   margin-right: 12px;
